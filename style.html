@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eddie Opara Style</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/and8spm.css">
+</head>
+
+<body>
+    <div class="linkBox">
+        <div class="link"><a href="index.html">HOME</a></div>
+        <div class="link"><a href="about.html">ABOUT</a></div>
+        <div class="link"><a href="gallery.html">GALLERY</a></div>
+        <div class="link"><a href="career.html">CAREER</a></div>
+    </div>
+    <h1>Style</h1>
+    <img class="banner" src="img/backgroundReverse.png" alt="Background texture with black dots that get smaller"
+        width="800px">
+    <div class="PictureList">
+        <div class="PictureHover firstPic">
+            <p>He states the Margaret Thatcher contributed to his desire to become a designer, Thatcher took away school
+                children's milk and Opara claimed to have loved milk and he wanted to be part of a movement that “gave
+                back and collaborated for the common good.” He knows it's strange, but he says childhood impressions are
+                very powerful and that moment really stuck with him and shaped his attitude.</p>
+            <div class="picture"><img src="img/milk.png" alt="a picture of a glass of milk"></div>
+        </div>
+        <div class="PictureHover">
+            <p>During his academic studies he moved to Holland for one year, where he was blown away at how integrated
+                their design was into their life. And his over style of work seems to be heavily influenced by the Dutch
+                design style</p>
+            <div class="picture"><img src="img/holland.png" alt="a picture of a map of Holland within Europe"></div>
+        </div>
+        <div class="PictureHover">
+            <p>I would say Eddie’s signature style I very clean and minimalistic, He isn't adding anything to the
+                designs that isn't necessary.</p>
+            <div class="picture"><img src="img/clean.png" alt="photos of some work with a clean style"></div>
+        </div>
+    </div>
+    <footer>
+        <img src="img/backgroundWhite.png" alt="background texture with white dots that get smaller" width="800px">
+        <h6>Created By Nathan Sporrer for DMII</h6>
+        <img src="img/backgroundWhiteReverse.png" alt="background texture with white dots that get smaller"
+            width="800px">
+    </footer>
+
+    <script>
+        document.addEventListener('mouseover', function (e) {
+            e = e || window.event;
+            e.preventDefault;
+            var target = e.target || e.srcElement, text = target.textContent || target.innerText;
+
+            if(target.classList.contains('PictureHover')){
+            target.classList.add('hovered')};
+        }, false);
+    </script>
+</body>
+
+</html>

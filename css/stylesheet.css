@@ -1,0 +1,236 @@
+/**------------------------------------------------FONTS---**/
+p{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h3, h6, a{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h1{
+    font-size: 8em;
+}
+/**------------------------------------------------FOOTER---**/
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+footer img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 75px;
+}
+footer p{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/**------------------------------------------------GENERAL---**/
+body{
+    margin: 0;
+}
+.linkBox{
+    width: 150px;
+    position: relative;
+    float: right;
+    background-color: white;
+    z-index: 3;
+}
+.link a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+.link a:visited{
+    color: white;
+}
+
+.link:hover a{
+    background-color:lightgrey;
+    text-decoration: none;
+    transition-duration: .1s;
+}
+/**------------------------------------------------INDEX---**/
+.indexBack {
+    width: 1920px;
+    z-index: -2;
+    position: fixed;
+    bottom: 340px;
+    left: 20px;
+}
+.indexGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    bottom: 150px;
+}
+.quote{
+    min-width: 700px;
+    position: relative;
+    top: 35%;
+}
+.quote h3{
+    width: 200px;
+    background-color: white;
+    padding: 5px;
+}
+.eddie{
+    padding: 0px;
+    margin: 0px;
+}
+.eddiePhoto{
+    width: 110%;
+    min-width: 474px;
+    z-index: 1;
+}
+.blurb p{
+    width: 25%;
+    padding: 5px;
+}
+.blurb{
+    background-color: white;
+}
+.line{
+    position: relative;
+    float:right;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.quote h1{
+    background-color: white;
+    width: 700px;
+    padding: 0px;
+    position: relative;
+    top: 50px;
+}
+.filler{
+    background-color: white;
+}
+/**------------------------------------------------PICTUREHOVER---**/
+.hovered .picture{
+    opacity: 100;
+    transition-duration: 1s;
+}
+.picture{
+    opacity: 0;
+    width: 100%;
+}
+.picture img {
+    width: 300px;
+}
+.PictureHover:hover .picture {
+    opacity: 100;
+    transition-duration: 1s;
+    width: 300px;
+}
+.PictureHover p {
+    margin-right: 40%;
+    margin-left: 40%;
+    width: 50%;
+}
+.PictureHover{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+.PictureList{
+    padding-bottom: 200px;
+    position: relative;
+    top: 100px;
+    left: 5%;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+}
+body{
+    position: relative;
+}
+.banner {
+    position: absolute;
+    right: 140px;
+    top: 10px;
+    z-index: 4;
+}
+.firstPic{
+    position: relative;
+    left: 25px;
+}
+/**------------------------------------------------GALLERY---**/
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding-bottom: 50px;
+
+}
+.gallery .words{
+    width: 250px;
+}
+.filler2{
+    height: 100px;
+    background-color: white;
+}
+.leftBox{
+    position: relative;
+    height: 255px;
+}
+.left{
+    position: absolute;
+    right: 0px;
+    text-align: right;
+}
+.photo img {
+    width: 200px;
+}
+.gif img {
+    width: 97px;
+    position: relative;
+    bottom: 195px;
+}
+.gif2 img{
+    width: 94px;
+    position: relative;
+    bottom: 205px;
+    right: 100px;
+}
+h3{
+    margin-top: 0px;
+}
+
+.gallery:hover .photo img{
+width: 300px;
+transition-duration: 2s;
+}
+.gallery:hover .gif img{
+    width: 150px;
+    transition-duration: 2s;
+    position: relative;
+    bottom: 300px;
+    }
+    .gallery:hover .gif2 img{
+        width: 140px;
+        transition-duration: 2s;
+        position: relative;
+        bottom: 303px;
+        right: 150px;
+        }

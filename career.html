@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eddie Opara Career</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/and8spm.css">
+</head>
+
+<body>
+    <div class="linkBox">
+        <div class="link"><a href="index.html">HOME</a></div>
+        <div class="link"><a href="about.html">ABOUT</a></div>
+        <div class="link"><a href="gallery.html">GALLERY</a></div>
+        <div class="link"><a href="style.html">STYLE</a></div>
+    </div>
+    <h1>Career</h1>
+    <img class="banner" src="img/backgroundReverse.png" alt="Background texture with black dots that get smaller"
+        width="800px">
+    <div class="PictureList">
+        <div class="PictureHover firstPic">
+            <p>Creative director for Ben's Best blnz (2023)</p>
+            <div class="picture"><img src="img/benz.png" alt="photos from benz best blndz"></div>
+        </div>
+        <div class="PictureHover">
+            <p>Gold Cube Award from The Art Directors Club</p>
+            <div class="picture"><img src="img/goldCube.png" alt="a picture of the gold cube award"></div>
+        </div>
+        <div class="PictureHover">
+            <p>Honors from D&amp;AD, The Society for Experiential Graphic Design (SEGD), Type Directors Club, Tokyo Type
+                Directors Club, The American Institute of Graphic Arts (AIGA), and Communication Arts.</p>
+            <div class="picture"><img src="img/honors.png" alt="a picture of the companies that gave eddie awards">
+            </div>
+        </div>
+        <div class="PictureHover">
+            <p>He has work in the permanent collection of the Museum of Modern Art</p>
+            <div class="picture"><img src="img/Moma.png" alt="MoMA logo"></div>
+        </div>
+        <div class="PictureHover">
+            <p>In both 2012 and 2014 he was named one of Fast Company's 100 Most Creative People in Business and was
+                featured in Ebony Magazine's Power 100 and Adweek's Creative 100.</p>
+            <div class="picture"><img src="img/100s.png" alt="picture of the companies that gave eddie top 100 awards">
+            </div>
+        </div>
+        <div class="PictureHover">
+            <p>A senior critic at Yale University of Art and has taught at Rhode Island School of Design and the
+                Columbia University School of Architecture</p>
+            <div class="picture"><img src="img/schoolsTeach.png" alt="logos of the schools eddie has taught at"></div>
+        </div>
+    </div>
+    <footer>
+        <img src="img/backgroundWhite.png" alt="background texture with white dots that get smaller" width="800px">
+        <h6>Created By Nathan Sporrer for DMII</h6>
+        <img src="img/backgroundWhiteReverse.png" alt="background texture with white dots that get smaller"
+            width="800px">
+    </footer>
+
+    <script>
+        document.addEventListener('mouseover', function (e) {
+            e = e || window.event;
+            e.preventDefault;
+            var target = e.target || e.srcElement, text = target.textContent || target.innerText;
+
+            if(target.classList.contains('PictureHover')){
+            target.classList.add('hovered')};
+        }, false);
+    </script>
+</body>
+
+</html>

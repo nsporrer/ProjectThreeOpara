@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eddie Opara About</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/and8spm.css">
+</head>
+
+<body>
+    <div class="linkBox">
+        <div class="link"><a href="index.html">HOME</a></div>
+        <div class="link"><a href="gallery.html">GALLERY</a></div>
+        <div class="link"><a href="style.html">STYLE</a></div>
+        <div class="link"><a href="career.html">CAREER</a></div>
+    </div>
+    <h1>About</h1>
+    <img class="banner" src="img/backgroundReverse.png" alt="Background texture with black dots that get smaller"
+        width="800px">
+    <div class="PictureList">
+        <div class="PictureHover firstPic">
+            <p>Eddie Opara was born in Wandsworth London in 1972</p>
+            <div class="picture"><img src="img/uk.png" alt="map of the uk"></div>
+        </div>
+        <div class="PictureHover">
+            <p>He attended 4 colleges in total, starting at Wimbledon College and Kingston College, he finished his
+                Honors BA at the London College of Printing in 1995 and eventually received his master's degree after
+                traveling to the United States and studying at Yale university... He received his MFA in 1997</p>
+            <div class="picture"><img src="img/schools.png" alt="a picture of eddies colleges attended logos"></div>
+        </div>
+        <div class="PictureHover">
+            <p>He has worked at many different design studios. Including ATG, Imaginary Forces, 2x4 (senior art
+                director), The Map Office (His own studio) 2005</p>
+            <div class="picture"><img src="img/work.png" alt="a picture of the logos of the places eddie has worked at">
+            </div>
+        </div>
+        <div class="PictureHover">
+            <p>In 2010 he joined the New York office at the design studio Pentagram where he still works today.</p>
+            <div class="picture"><img src="img/pentagram.png" alt="pentagram design studio logo"></div>
+        </div>
+    </div>
+    <footer>
+        <img src="img/backgroundWhite.png" alt="background texture with white dots that get smaller" width="800px">
+        <h6>Created By Nathan Sporrer for DMII</h6>
+        <img src="img/backgroundWhiteReverse.png" alt="background texture with white dots that get smaller"
+            width="800px">
+    </footer>
+
+    <script>
+        document.addEventListener('mouseover', function (e) {
+            e = e || window.event;
+            e.preventDefault;
+            var target = e.target || e.srcElement, text = target.textContent || target.innerText;
+
+            if(target.classList.contains('PictureHover')){
+            target.classList.add('hovered')};
+        }, false);
+    </script>
+</body>
+
+</html>
